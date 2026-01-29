@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jumpscare</title>
+
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at center, #111, #000);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    font-family: system-ui, sans-serif;
+  }
+
+  /* Calm message */
+  .hint {
+    color: #888;
+    letter-spacing: 2px;
+    animation: breathe 4s ease-in-out infinite;
+    z-index: 1;
+  }
+
+  /* Jumpscare face */
+  .face {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transform: scale(0.2);
+    transition: none;
+    z-index: 10;
+  }
+
+  .face img {
+    width: 80vw;
+    max-width: 600px;
+    filter: contrast(1.4) brightness(1.2);
+  }
+
+  /* Flash overlay */
+  .flash {
+    position: fixed;
+    inset: 0;
+    background: white;
+    opacity: 0;
+    z-index: 9;
+  }
+
+  /* Triggered states */
+  body.scare .face {
+    opacity: 1;
+    animation: slam 0.18s cubic-bezier(.1,.7,.2,1) forwards,
+               shake 0.4s 0.18s;
+  }
+
+  body.scare .flash {
+    animation: flash 0.15s;
+  }
+
+  /* Animations */
+  @keyframes slam {
+    from { transform: scale(0.2); }
+    to { transform: scale(1.2); }
+  }
+
+  @keyframes shake {
+    0% { transform: translate(0); }
+    20% { transform: translate(-12px, 8px); }
+    40% { transform: translate(10px, -6px); }
+    60% { transform: translate(-8px, 6px); }
+    80% { transform: translate(6px, -4px); }
+    100% { transform: translate(0); }
+  }
+
+  @keyframes flash {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  @keyframes breathe {
+    0%,100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="hint">DON'T BLINK</div>
+
+<div class="flash"></div>
+
+<div class="face">
+  <!-- Replace with any scary image -->
+  <img src="dd.png" alt="scary face">
+</div>
+
+<script>
+  // Delay before jumpscare
+  setTimeout(() => {
+    document.body.classList.add("scare");
+
+    // Optional sound
+    // const audio = new Audio("jumpscare.mp3");
+    // audio.volume = 1;
+    // audio.play();
+
+  }, 3500);
+</script>
+
+</body>
+</html>
