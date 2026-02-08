@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About | Fantasy RPG</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #f8fafc;
+      position: relative;
+      min-height: 100vh;
+      background-image: url('https://upload-os-bbs.hoyolab.com/upload/2022/08/30/7775885/ab0dcf5682442cdbbe0938cd37393b80_1150657579912120571.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #0f172a;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(15, 23, 42, 0.7);
+      z-index: -1;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      color: #38bdf8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(2, 6, 23, 0.75);
+      padding: 30px 30px 30px 30px;
+      border-radius: 10px;
+      position: relative;
+      z-index: 1;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #1e293b;
+      padding: 15px;
+      text-align: left;
+    }
+
+    th {
+      background: rgba(30, 41, 59, 0.9);
+    }
+
+    p {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    /* Paimon image positioned near top-center, slightly right */
+    #paimon {
+      position: fixed;
+      top: 50px;
+      left: 20%;
+      width: 220px;
+      pointer-events: none;
+      z-index: 10;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img 
+    id="paimon"
+    src="https://www.pngmart.com/files/23/Paimon-PNG-Isolated-Pic.png" 
+    alt="Paimon" 
+    tabindex="-1"
+  >
+
+  <div class="container">
+    <h1>About This Project</h1>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="characters.html">Characters</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <table>
+      <tr>
+        <th>Purpose</th>
+        <td>HTML, CSS, and UI design practice with a fantasy RPG theme inspired by Genshin Impact.</td>
+      </tr>
+      <tr>
+        <th>Tech Used</th>
+        <td>HTML, CSS, and a bit of responsive design. No frameworks, just pure web design fun.</td>
+      </tr>
+      <tr>
+        <th>Status</th>
+        <td>Prototype design; still adding characters, lore, and interactive sections.</td>
+      </tr>
+    </table>
+
+    <h2>Fantasy RPG Info</h2>
+    <p>This website draws inspiration from popular action RPGs, especially <strong>Genshin Impact</strong>. It features:</p>
+    <ul>
+      <li>Character design layouts with elemental roles (e.g., Electro, Hydro, Pyro, Anemo).</li>
+      <li>Clean table-based organization for stats, lore, and abilities.</li>
+      <li>Immersive thematic backgrounds for a fantasy aesthetic.</li>
+      <li>Focus on storytelling and world-building, similar to Teyvat's regions.</li>
+      <li>Expandable design to eventually include talents, weapons, and constellation mechanics.</li>
+    </ul>
+
+    <p>While not affiliated with miHoYo, this site is a homage to the style and structure of games like Genshin Impact, demonstrating open-world fantasy elements and RPG mechanics in a simple, web-friendly format.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Characters | Fantasy RPG</title>
+  <style>
+    /* Base body styling and background */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://upload-os-bbs.hoyolab.com/upload/2022/08/30/7775885/ab0dcf5682442cdbbe0938cd37393b80_1150657579912120571.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    /* Dark overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(15, 23, 42, 0.75);
+      z-index: -1;
+    }
+
+    /* Center container */
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(2, 6, 23, 0.85);
+      padding: 40px 30px 20px 30px; /* less bottom padding to move content up */
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 15px; /* reduced from 30px */
+      font-weight: bold;
+      font-size: 2.4rem;
+    }
+
+    nav {
+      margin-bottom: 20px; /* reduced from 40px */
+    }
+
+    nav a {
+      color: #38bdf8;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #020617;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 0; /* removed extra margin on top */
+    }
+
+    th, td {
+      border: 1px solid #1e293b;
+      padding: 18px 12px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    th {
+      background: #1e293b;
+      font-weight: 700;
+    }
+
+    td a {
+      color: #22d3ee;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    td a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 15px;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+      }
+
+      th, td {
+        padding: 12px 8px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Character Designs</h1>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="characters.html">Characters</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <table>
+      <tr>
+        <th>Code Name</th>
+        <th>Role</th>
+        <th>Element</th>
+        <th>Profile</th>
+      </tr>
+
+      <tr>
+        <td>Aether / Lumine</td>
+        <td>Versatile DPS / Support</td>
+        <td>Multiple (Anemo, Geo, Electro, Dendro)</td>
+        <td><a href="a.html">View</a></td>
+      </tr>
+
+      <tr>
+        <td>Columbina Hyposelenia</td>
+        <td>Sub-DPS / Support</td>
+        <td>Hydro</td>
+        <td><a href="l.html">View</a></td>
+      </tr>
+
+      <tr>
+        <td>Raiden Shogun (Ei)</td>
+        <td>Sub-DPS / Battery / Main DPS</td>
+        <td>Electro</td>
+        <td><a href="r.html">View</a></td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
